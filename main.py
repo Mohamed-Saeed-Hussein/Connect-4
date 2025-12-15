@@ -55,7 +55,7 @@ def main():
                         draw_board(board, screen)
     
         if turn == AI and not game_over:
-            col, minimax_score = minimax(board, 10, -math.inf, math.inf, True)
+            col, minimax_score = minimax(board, 5, -math.inf, math.inf, True)
     
             if is_valid_location(board, col):
                 pygame.time.wait(500)
