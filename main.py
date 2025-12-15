@@ -19,7 +19,7 @@ def main():
     
     myfont = pygame.font.SysFont("monospace", 75)
     
-    draw_board(board, screen, myfont)
+    draw_board(board, screen)
     pygame.display.update()
     
     while not game_over:
@@ -52,10 +52,10 @@ def main():
                         turn = turn % 2
     
                         print_board(board)
-                        draw_board(board, screen, myfont)
+                        draw_board(board, screen)
     
         if turn == AI and not game_over:
-            col, minimax_score = minimax(board, 5, -math.inf, math.inf, True)
+            col, minimax_score = minimax(board, 10, -math.inf, math.inf, True)
     
             if is_valid_location(board, col):
                 pygame.time.wait(500)
@@ -67,7 +67,7 @@ def main():
                     game_over = True
     
                 print_board(board)
-                draw_board(board, screen, myfont)
+                draw_board(board, screen)
     
                 turn += 1
                 turn = turn % 2

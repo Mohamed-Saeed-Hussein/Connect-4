@@ -1,8 +1,8 @@
-import numpy as np
+import numpy
 from constants import *
 
 def create_board():
-    board = np.zeros((ROW_COUNT, COLUMN_COUNT))
+    board = numpy.zeros((ROW_COUNT, COLUMN_COUNT))
     return board
 
 def drop_piece(board, row, col, piece):
@@ -17,7 +17,7 @@ def get_next_open_row(board, col):
             return r
 
 def print_board(board):
-    print(np.flip(board, 0))
+    print(numpy.flip(board, 0))
 
 def winning_move(board, piece):
     # Check horizontal locations for win

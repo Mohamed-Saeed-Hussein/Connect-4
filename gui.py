@@ -2,7 +2,7 @@ import pygame
 import sys
 from constants import *
 
-def draw_board(board, screen, font):
+def draw_board(board, screen):
     for c in range(COLUMN_COUNT):
         for r in range(ROW_COUNT):
             pygame.draw.rect(screen, BLUE, (c*SQUARESIZE, r*SQUARESIZE+SQUARESIZE, SQUARESIZE, SQUARESIZE))

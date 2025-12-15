@@ -20,7 +20,7 @@ EMPTY = 0
 
 # Window Dimensions
 SQUARESIZE = 100
-width = COLUMN_COUNT * SQUARESIZE
-height = (ROW_COUNT + 1) * SQUARESIZE
+width = COLUMN_COUNT * SQUARESIZE # 700px
+height = (ROW_COUNT + 1) * SQUARESIZE # 700px
 size = (width, height)
 RADIUS = int(SQUARESIZE / 2 - 5)
